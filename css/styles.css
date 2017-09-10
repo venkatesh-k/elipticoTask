@@ -66,3 +66,15 @@ filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#CAFFC9', endC
 .moredata td span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:block;width:125px;}
 .moredata tbody td{padding:5px 0;}
 .moredata tbody td:not(:first-child){color:#777;font-size:12px;}
+
+
+
+@media (max-width:992px){
+	header{position:relative;overflow:initial;}
+	.main-nav ul li + li{background:none;}
+	nav.main-nav{position:static;}
+	.main-nav-container{display:none;position:absolute;left:0;width:100%;top:60px;}
+	.main-nav ul li,.main-nav ul li.active{display:block;background:#fff;border-radius:0;box-shadow:none;border-width:0;}
+	.navbar-toggle{display:block;top:5px;position: relative;border: 1px solid;}
+	.navbar-toggle .icon-bar{background:#000;}
+}

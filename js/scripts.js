@@ -1,4 +1,5 @@
 $(function(){
+	// Populate date to centre content on load of the page
 	$.ajax({ 
 		type: 'GET', 
 		url: 'https://api.myjson.com/bins/5bdb3', 
@@ -31,6 +32,7 @@ $(function(){
 		}
 	});
 	
+	// on clicking more, it will fetch data and populate will populate it
 	$(document).on('click', '.more a', function(e){
 		if($(this).closest(".program").find('.moredata').length > 0){
 			if($(this).html()=="more")
